@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'monerogothicbold';
+  src: url('fonts/monerogothic_v3-webfont.woff2') format('woff2'),
+       url('fonts/monerogothic_v3-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  text-align: center;
+}
+
+.XMR-logo {
+  max-height: 70px;
+  pointer-events: none;
+}
+
+.Monerochan {
+  height: 358px;
+  max-width: 600px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .XMR-logo {
+    margin: 0 auto;
+  }
+  .XMR-logo[spin='1'] {
+    animation: spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
