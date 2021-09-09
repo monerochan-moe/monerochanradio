@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <XMRSpinnerContext.Provider value={ spin }>
-          <img className="XMR-logo" src="https://web.getmonero.org/press-kit/symbols/monero-symbol-480.png" alt="logo" spin={spin} />
+          <img className="XMR-logo" src="https://siasky.net/CACAQXY48loSupnTB6Y4I6o2LmQuz5QtIlA5gHMNBG49JQ" alt="logo" spin={spin} />
         </XMRSpinnerContext.Provider>
         <p>Monerochan Radio</p>
         <GifPlayerContext.Provider value={ gif }>
