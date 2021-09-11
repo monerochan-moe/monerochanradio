@@ -1,6 +1,10 @@
 # Monerochan Radio
 Dedicated to all the Monerochan fans out there
 
+There is no commercial incentive to run this site. No donations accepted.
+
+The site is supposed to be as clean and cluter free as possible. Sorry about the ads, while on the beach, this is out of my control.
+
 The source code to this site is Apache Licensed, feel free to re-use
 
 ## Credits

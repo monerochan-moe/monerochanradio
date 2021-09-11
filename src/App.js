@@ -8,7 +8,7 @@ const XMRSpinnerContext = React.createContext()
 const ToggleContext = React.createContext()
 
 function App() {
-  const [gif, setGif] = useState('https://siasky.net/ZAAEKMDxpOZYKh5r6rfepF0wJBHoRrk1BdfC8jtTFzUyCA')
+  const [gif, setGif] = useState('https://siasky.net/GADSoto47u0R7CShyd9t8W-9yiJ4OZ7eBpzm3PJSU7bu0A')
   const [spin, setSpin] = useState(0)
   const [toggle, setToggle] = useState(() => false)
   
