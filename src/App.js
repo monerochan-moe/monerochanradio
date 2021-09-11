@@ -16,7 +16,7 @@ function App() {
     if (toggle === true) {
       setGif('https://siasky.net/ZADbsFFA6aO-XT3cL5x6ksdIuQTnRsMDCCZrJAhv4z3Awg/')
     } else if (toggle === false) {
-      setGif('https://siasky.net/_AgWA3gHF7Lmycu0ABJbCXfF41HGNkj0SulJGq0XZ7p3XQ')
+      setGif('https://siasky.net/_AjpCgEvClHM1TNXrv3YWXLeQKgz7z-ZEdUdwHGTNwAE1A')
     }
     setSpin(1)
   }
