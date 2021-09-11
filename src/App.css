@@ -6,8 +6,14 @@
   font-style: normal;
 }
 
-.App {
-  text-align: center;
+
+.App[beach='1'] {
+  background-image: url('https://siasky.net/3AEo6E9WDm0F3KYlhq2hwvyfQxeJKqf2aSUkPFg3RVBD8Q');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.App[beach='0'] {
+  background-color: #282c34;
 }
 
 .XMR-logo {
@@ -20,6 +26,16 @@
   max-width: 600px;
 }
 
+@keyframes pulsate {
+  0%   { color: rgb(255, 102, 0); }
+  50%  { color: rgb(76, 76, 76); }
+  100% { color: rgb(255, 102, 0); }
+}
+.r-title {
+  animation: pulsate 30s infinite ease-out;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .XMR-logo {
     margin: 0 auto;
@@ -30,7 +46,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+
   min-height: 100vh;
   display: flex;
   align-items: center;

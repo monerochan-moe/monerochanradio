@@ -1,12 +1,30 @@
-# monerochanradio
-monerochan radio
+# Monerochan Radio
+Dedicated to all the Monerochan fans out there
 
-Thanks to Token Girls for letting me use their Monerochan Gif, now go buy the NFT!
+The source code to this site is Apache Licensed, feel free to re-use
+
+## Credits
+### Token Girls
+Gif is used within the night time theme
 https://wax.atomichub.io/explorer/asset/1099547674268
 To tip the pixel artist Token Girls LV, please send XMR to the following XMR adress:
 84fcArEafcGLGPmYjpvJUpfWYppMDxPkNjR4srkaaeAZFqQgXtL71yN8n1XkyutcZWSvAVGZMWxc5cdHPaKFz9BiRL1jGXm
 
-Music Credit goes to Hunter FM
-https://www.radio-browser.info/#/history/5c35c578-6c34-11ea-b1cf-52543be04c81
+### Hunter FM
+Music is used within the night time theme
+https://hunter.fm/
 
-For inquiries contact monerochan-moe@fedora.email
+### Future FNK
+Music is used within the beach day time theme
+https://www.futurefnk.com/
+
+### Scarlett
+Gif is used within the beach day time theme
+https://twitter.com/c_starlett
+
+### XMR Community Art Fund
+Fund commissioned Monerochan dancing
+https://moneroart.neocities.org/
+
+## Contact
+monerochan-moe@fedora.email
