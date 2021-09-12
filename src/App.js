@@ -52,7 +52,7 @@ function App() {
             </XMRSpinnerContext.Provider>
               <ReactAudioPlayer 
                   className="radio" 
-                  src={ toggle === true ? "https://live.hunter.fm/lofi_high" :  "http://server3.digital-webstream.de:12160/;stream.mp3"}
+                  src={ toggle === true ? "https://live.hunter.fm/lofi_high" :  "https://nrf1.newradio.it:9522/stream"}
                   controls 
                   onPlay={ () => triggerAnim(toggle) } 
                   onPause={ () => pauseAnim(toggle)}
