@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "matter-js": "^0.17.1",
     "react": "^17.0.2",
     "react-animated-css": "^1.2.1",
     "react-audio-player": "^0.17.0",

@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import DarkModeToggle from "react-dark-mode-toggle";
+import Matter from "matter-js";
 
 const GifPlayerContext = React.createContext()
 const XMRSpinnerContext = React.createContext()
@@ -30,17 +31,69 @@ function App() {
     setSpin(0)
   }
 
+  function setupVolleyBall(toggle) {
+    if (toggle === false) {
+      var canvas = document.getElementById('App');
+      var Engine = Matter.Engine,
+        Render = Matter.Render,
+        World = Matter.World,
+        Bodies = Matter.Bodies,
+        Mouse = Matter.Mouse,
+        MouseConstraint = Matter.MouseConstraint;
+      
+      var engine = Engine.create(canvas, {
+          // positionIterations: 20
+      });
+      // var render = Render.create({
+      //   element: canvas,
+      //   engine: engine,
+      //   options: {
+      //     width: canvas.clientWidth,
+      //     height: canvas.clientHeight,
+      //     wireframes: false
+      //   }
+      // });
+      
+      var ballA = Bodies.circle(210, 100, 30, { restitution: 0.5 });
+      World.add(engine.world, [ballA])
+      // World.add(engine.world, [])
+
+      // add mouse control
+      var mouse = Mouse.create(canvas),
+      mouseConstraint = MouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: {
+          stiffness: 0.2,
+          render: {
+            visible: false
+          }
+        }
+      });
+
+      World.add(engine.world, mouseConstraint);
+
+      Matter.Runner.run(engine);
+
+      // Render.run(render);
+
+    }
+    console.log(toggle)
+  }
+
   return (
     <ToggleContext.Provider value={ toggle }>   
-      <div className="App" beach={ toggle === false ? "1" : "0"}>
+      <div id="App" className="App" beach={ toggle === false ? "1" : "0"} z-index="-1">
+        <canvas id="canvas" className="canvas"/>
         <DarkModeToggle
                   onChange={() => setToggle(prevToggle => {
                       pauseAnim(!prevToggle)
+                      setupVolleyBall(!prevToggle)
                     return prevToggle === true ? false : true
                   })}
                   checked={toggle}
                   size={130}
                   text-align="left"
+                  z-index="100"
                   />   
           <header className="App-header">
             <XMRSpinnerContext.Provider value={ spin }>
