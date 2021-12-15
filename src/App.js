@@ -42,8 +42,8 @@ function App() {
                   size={130}
                   text-align="left"
                   /> 
-          <div style="display: flex; justify-content: right;">
-            <a href="https://thetendiefren.co/" text-align="right" target="_blank" style="font-size: 0px;">
+          <div style={{display:"flex", justifyContent:"right"}}>
+            <a href="https://thetendiefren.co/" text-align="right" target="_blank" rel="noreferrer" style={{fontSize: "0px"}}>
               <img class="pepe" src="https://siasky.net/BAAjTZYF9KFBbs8eKJn7Kons1ArdcrWQ4WNlZc3EfSht_w" alt="Pepe" text-align="right"/>
             </a>
           </div>
