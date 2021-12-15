@@ -41,7 +41,8 @@ function App() {
                   checked={toggle}
                   size={130}
                   text-align="left"
-                  />   
+                  /> 
+          <a href="https://thetendiefren.co/"><img className="pepe" src="https://siasky.net/BAAjTZYF9KFBbs8eKJn7Kons1ArdcrWQ4WNlZc3EfSht_w" alt="Pepe" text-align="right"/> </a> 
           <header className="App-header">
             <XMRSpinnerContext.Provider value={ spin }>
               <img className="XMR-logo" src={ toggle === false ? "https://siasky.net/XAFxT3D33-9ui-N_rS696C7fXf0IoCW2xlZoljUgVU63ew" : "https://siasky.net/CACAQXY48loSupnTB6Y4I6o2LmQuz5QtIlA5gHMNBG49JQ"} alt="logo" spin={spin} />
