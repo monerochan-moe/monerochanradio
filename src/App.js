@@ -44,7 +44,7 @@ function App() {
                   /> 
             <div style={{display:"flex", justifyContent:"right"}}>
             <a href="https://thetendiefren.co/" text-align="right" target="_blank" rel="noreferrer" style={{fontSize: "0px",verticalAlign:"top"}}>
-              <img class="pepe" src="https://siasky.net/BAAjTZYF9KFBbs8eKJn7Kons1ArdcrWQ4WNlZc3EfSht_w" alt="Pepe" text-align="right" style={{position:"absolute",top:"10px",right:"10px"}}/>
+              <img class="pepe" src="https://siasky.net/BAAjTZYF9KFBbs8eKJn7Kons1ArdcrWQ4WNlZc3EfSht_w" alt="Pepe" text-align="right" style={{position:"absolute",top:"5px",right:"0px"}}/>
               </a>
             </div>
             <div style={{display:"flex", justifyContent:"right"}}>
