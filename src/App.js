@@ -55,7 +55,7 @@ function App() {
           <header className="App-header">
             <XMRSpinnerContext.Provider value={ spin }>
               <img className="XMR-logo" src={ toggle === false ? "https://siasky.net/XAFxT3D33-9ui-N_rS696C7fXf0IoCW2xlZoljUgVU63ew" : "https://siasky.net/CACAQXY48loSupnTB6Y4I6o2LmQuz5QtIlA5gHMNBG49JQ"} alt="logo" spin={spin} />
-              <a className="r-title">Monerochan Radio</a>
+              <pre className="r-title">Monerochan Radio</pre>
             <GifPlayerContext.Provider value={ gif }>
               <img className="Monerochan" src={ gif } alt="Monerochan"/>
           </GifPlayerContext.Provider>
