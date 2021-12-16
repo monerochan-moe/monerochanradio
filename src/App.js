@@ -49,7 +49,7 @@ function App() {
             </div>
             <div style={{display:"flex", justifyContent:"right"}}>
             <a href="https://thetendiefren.co/" text-align="right" target="_blank" rel="noreferrer" style={{fontSize: "0px",verticalAlign:"top"}}>
-              <img class="speech" src="https://siasky.net/PANPmO5L0FFe11XrD-U2Aj7PGCiyYFrTbjFEyBy7k2Sung" alt="speech" text-align="right" style={{width:"auto",height:"112px"}}/>
+              <img class="speech" src="https://siasky.net/vAJZopQGud18WQW5HFOab_mUEizvGeKaZXhnX1Y-tAY3VA" alt="speech" text-align="right" style={{width:"auto",height:"112px"}}/>
               </a>
             </div>
           <header className="App-header">
