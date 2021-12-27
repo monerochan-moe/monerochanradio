@@ -41,21 +41,11 @@ function App() {
                   checked={toggle}
                   size={130}
                   text-align="left"
-                  /> 
-            <div style={{display:"flex", justifyContent:"right"}}>
-            <a href="https://thetendiefren.co/" text-align="right" target="_blank" rel="noreferrer" style={{fontSize: "0px",verticalAlign:"top"}}>
-              <img class="pepe" src="https://siasky.net/BAAjTZYF9KFBbs8eKJn7Kons1ArdcrWQ4WNlZc3EfSht_w" alt="Pepe" text-align="right" style={{position:"absolute",top:"30px",right:"0px"}}/>
-              </a>
-            </div>
-            <div style={{display:"flex", justifyContent:"right"}}>
-            <a href="https://thetendiefren.co/" text-align="right" target="_blank" rel="noreferrer" style={{fontSize: "0px",verticalAlign:"top"}}>
-              <img class="speech" src="https://siasky.net/vAJZopQGud18WQW5HFOab_mUEizvGeKaZXhnX1Y-tAY3VA" alt="speech" text-align="right" style={{width:"auto",height:"112px"}}/>
-              </a>
-            </div>
+                  />   
           <header className="App-header">
             <XMRSpinnerContext.Provider value={ spin }>
               <img className="XMR-logo" src={ toggle === false ? "https://siasky.net/XAFxT3D33-9ui-N_rS696C7fXf0IoCW2xlZoljUgVU63ew" : "https://siasky.net/CACAQXY48loSupnTB6Y4I6o2LmQuz5QtIlA5gHMNBG49JQ"} alt="logo" spin={spin} />
-              <b className="r-title">Monerochan Radio</b>
+              <p className="r-title">Monerochan Radio</p>
             <GifPlayerContext.Provider value={ gif }>
               <img className="Monerochan" src={ gif } alt="Monerochan"/>
           </GifPlayerContext.Provider>
@@ -69,8 +59,8 @@ function App() {
                   />  
           </header>
           <a href="https://github.com/monerochan-moe/monerochanradio">About</a>
-      </div>
-    </ToggleContext.Provider>
+        </div>
+      </ToggleContext.Provider>
       
   );
 }
