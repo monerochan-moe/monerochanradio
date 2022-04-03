@@ -2,10 +2,24 @@ import './App.css';
 import React, { useState } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import DarkModeToggle from "react-dark-mode-toggle";
+import Countdown from 'react-countdown';
 
 const GifPlayerContext = React.createContext()
 const XMRSpinnerContext = React.createContext()
 const ToggleContext = React.createContext()
+
+const Completionist = () => <span>NearNymphs NFT mint on Near Protocol is live!</span>;
+
+// Renderer callback with condition
+const renderer = ({ days, hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a completed state
+    return <Completionist />;
+  } else {
+    // Render a countdown
+    return <span>brought to you by tan69dao - {days} days {hours} hours until NearNypmhs NFT mint</span>;
+  }
+};
 
 function App() {
   const [gif, setGif] = useState('https://fileportal.org/GADSoto47u0R7CShyd9t8W-9yiJ4OZ7eBpzm3PJSU7bu0A')
@@ -32,6 +46,13 @@ function App() {
 
   return (
     <ToggleContext.Provider value={ toggle }>   
+      <a href="https://b.link/tandao" style={{background:"#ff6600"}}>
+      <marquee direction='right' scrollamount="7">
+        <span style={{color:"black"}}>
+        <Countdown date={'2022-04-06T03:12:00'} renderer={renderer}/>
+        </span>
+    </marquee>
+      </a>
       <div className="App" beach={ toggle === false ? "1" : "0"}>
         <DarkModeToggle
                   onChange={() => setToggle(prevToggle => {
@@ -46,6 +67,9 @@ function App() {
             <XMRSpinnerContext.Provider value={ spin }>
               <img className="XMR-logo" src={ toggle === false ? "https://fileportal.org/XAFxT3D33-9ui-N_rS696C7fXf0IoCW2xlZoljUgVU63ew" : "https://fileportal.org/CACAQXY48loSupnTB6Y4I6o2LmQuz5QtIlA5gHMNBG49JQ"} alt="logo" spin={spin} />
               <p className="r-title">Monerochan Radio</p>
+              <a href="https://b.link/tandao">
+                <img alt="tan69dao" className="tan69dao" src="https://fileportal.org/vABwJds8UyVoyy1daX1yBJLe0ITLFvG0DXtlPeGFIPyBYA" width="300"/>
+              </a>
             <GifPlayerContext.Provider value={ gif }>
               <img className="Monerochan" src={ gif } alt="Monerochan"/>
           </GifPlayerContext.Provider>
@@ -58,6 +82,8 @@ function App() {
                   onPause={ () => pauseAnim(toggle)}
                   />  
           </header>
+          <body>
+          </body>
           <a href="https://github.com/monerochan-moe/monerochanradio">About</a>
         </div>
       </ToggleContext.Provider>
