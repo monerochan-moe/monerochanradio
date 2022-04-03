@@ -17,7 +17,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     return <Completionist />;
   } else {
     // Render a countdown
-    return <span>brought to you by tan69dao - {days} days {hours} hours until NearNypmhs NFT mint</span>;
+    return <span>{days} days {hours} hours until NearNypmhs NFT mint - brought to you by tan69dao</span>;
   }
 };
 
@@ -46,12 +46,12 @@ function App() {
 
   return (
     <ToggleContext.Provider value={ toggle }>   
-      <a href="https://b.link/tandao" style={{background:"#ff6600"}}>
-      <marquee direction='right' scrollamount="7">
-        <span style={{color:"black"}}>
-        <Countdown date={'2022-04-06T03:12:00'} renderer={renderer}/>
-        </span>
-    </marquee>
+     <a href="https://b.link/tandao" style={{background:"#ff6600"}}>
+          <span className="marquee" style={{color:"black"}}>
+            <span>
+              <Countdown date={'2022-04-06T03:12:00'} renderer={renderer}/>
+            </span>
+          </span>
       </a>
       <div className="App" beach={ toggle === false ? "1" : "0"}>
         <DarkModeToggle
@@ -70,10 +70,6 @@ function App() {
               <a href="https://b.link/tandao">
                 <img alt="tan69dao" className="tan69dao" src="https://fileportal.org/vABwJds8UyVoyy1daX1yBJLe0ITLFvG0DXtlPeGFIPyBYA" width="300"/>
               </a>
-            <GifPlayerContext.Provider value={ gif }>
-              <img className="Monerochan" src={ gif } alt="Monerochan"/>
-          </GifPlayerContext.Provider>
-            </XMRSpinnerContext.Provider>
               <ReactAudioPlayer 
                   className="radio" 
                   src={ toggle === true ? "https://live.hunter.fm/lofi_high" :  "https://nrf1.newradio.it:9522/stream"}
@@ -81,6 +77,11 @@ function App() {
                   onPlay={ () => triggerAnim(toggle) } 
                   onPause={ () => pauseAnim(toggle)}
                   />  
+            <GifPlayerContext.Provider value={ gif }>
+              <img className="Monerochan" src={ gif } alt="Monerochan"/>
+          </GifPlayerContext.Provider>
+            </XMRSpinnerContext.Provider>
+              
           </header>
           <body>
           </body>

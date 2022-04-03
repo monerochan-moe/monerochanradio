@@ -36,6 +36,26 @@
   animation: pulsate 30s infinite ease-out;
 }
 
+.marquee {
+  width: 450px;
+line-height: 0px;
+background-color: rgb(255, 102, 0);
+color: rgb(255, 102, 0);
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .XMR-logo {
