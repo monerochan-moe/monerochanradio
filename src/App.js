@@ -46,7 +46,7 @@ function App() {
 
   return (
     <ToggleContext.Provider value={ toggle }>   
-     <a href="https://b.link/tandao" style={{background:"#ff6600"}}>
+     <a href="https://rebrand.ly/tandao" style={{background:"#ff6600"}}>
           <span className="marquee" style={{color:"black"}}>
             <span>
               <Countdown date={'2022-04-06T03:12:00'} renderer={renderer}/>
@@ -67,7 +67,7 @@ function App() {
             <XMRSpinnerContext.Provider value={ spin }>
               <img className="XMR-logo" src={ toggle === false ? "https://fileportal.org/XAFxT3D33-9ui-N_rS696C7fXf0IoCW2xlZoljUgVU63ew" : "https://fileportal.org/CACAQXY48loSupnTB6Y4I6o2LmQuz5QtIlA5gHMNBG49JQ"} alt="logo" spin={spin} />
               <p className="r-title">Monerochan Radio</p>
-              <a href="https://b.link/tandao">
+              <a href="https://rebrand.ly/tandao">
                 <img alt="tan69dao" className="tan69dao" src="https://fileportal.org/vABwJds8UyVoyy1daX1yBJLe0ITLFvG0DXtlPeGFIPyBYA" width="300"/>
               </a>
               <ReactAudioPlayer 
