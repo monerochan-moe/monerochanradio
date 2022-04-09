@@ -1,3 +1,14 @@
+I was asked to submit a pull request to announce a P2P market place called AnonCoj.ch
+
+Anocoj (Pronounced Anon Tzoi) means Announcements or Advertisements in Esperanto. AnonCoj is an anonymous P2P XMR only market place to buy and sell your goods and services. It is based on the philosophy of Agorism or peer-to-peer economy. The front as well as backend are based on Flarum - a FOSS platform. 
+It has internal messaging, darkmode, user-blogs and a whole lot more, all the while it is still in Alpha version.
+So drop by, buy or sell on AnonCoj for your Monero. Monero means money and it is supposed to be used, on P2P platforms like AnonCoj.
+
+ AnonCoj.ch is hosted in Switzerland with backups in Germany. For privacy conscious like the users of XMR AnonCoj.ch suits the best as no email-verification is required and no personal or private data is logged. 
+ 
+ You are ACTIVELY encouraged to give a throwaway email (such as getnada.com) or even sneedandfeed@chuck.com while you signup. 
+
+
 # Monerochan Radio
 Dedicated to all the Monerochan fans out there
 
